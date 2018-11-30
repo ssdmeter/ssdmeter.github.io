@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Categories - ssdmeter</title>
+    <title>Search - ssdmeter
+</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -62,12 +63,7 @@
     </div>
     
     <div class="col-md-7" style="margin-left:500px">
-    <section id="categories">
-      <h1>All Categories for ssdmeter</h1>
-        <div class="panel-group" id="accordion">
-        </div>
-
-    </section>
+<div id="tipue_search_content"></div>
     </div>
     
   </div>
@@ -95,5 +91,17 @@
 
 
 
+    <script type="text/javascript" src="./theme/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="./theme/tipuesearch/tipuesearch.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+        'mode' : 'json',
+        'show': 10,
+        'newWindow': false,
+        'contentLocation': 'tipuesearch_content.json'
+      });
+    });
+    </script>
 </body>
 </html>
