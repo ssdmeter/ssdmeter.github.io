@@ -13,13 +13,13 @@
 <link rel="canonical" href="./">
 
         <meta name="author" content="cranechu@gmail.com" />
-        <meta name="description" content="Thank you for visiting. Welcome! About SSDMeter ssdmeter About Driver Test Environment item hardware platform DELL CPU Intel ... DRAM 18GB" />
+        <meta name="description" content="Thank you for visiting. Welcome! About Driver We use the driver ssdmeter, which is based on SPDK userspace NVMe device driver. Test Environment item hardware platform DELL CPU Intel ... DRAM 18GB" />
 
     <meta property="og:site_name" content="ssdmeter" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="ABOUT US"/>
     <meta property="og:url" content="./"/>
-    <meta property="og:description" content="Thank you for visiting. Welcome! About SSDMeter ssdmeter About Driver Test Environment item hardware platform DELL CPU Intel ... DRAM 18GB" />
+    <meta property="og:description" content="Thank you for visiting. Welcome! About Driver We use the driver ssdmeter, which is based on SPDK userspace NVMe device driver. Test Environment item hardware platform DELL CPU Intel ... DRAM 18GB" />
 
 
 
@@ -30,6 +30,8 @@
     <link href="./theme/css/pygments/native.css" rel="stylesheet">
     <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+        
+        <link href="./theme/css/filtrify.css" rel="stylesheet">
 
 
 
@@ -51,7 +53,9 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
 
-                <li> <h3> ABOUT US </h3> </li>
+                <h3>
+                  <a href="./"> ABOUT US </a>
+
             
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -70,36 +74,91 @@
 <div class="container-fluid">
   <div class="row">
     
-    <div style="width:200px; position:fixed">
-      <li><a href="./pages/ca3-8d256-q11-nvme-liteon-256gb-c48110c/index.html">
-          CA3-8D256-Q11 NVME LITEON 256GB.C48110C
-      </a></li>
-      <li><a href="./pages/kbg30zms256g-nvme-toshiba-256gb-adda0102/index.html">
-          KBG30ZMS256G NVME TOSHIBA 256GB.ADDA0102
-      </a></li>
-      <li><a href="./pages/sm961-nvme-samsung-1024gb-cxa75d0q/index.html">
-          SM961 NVME SAMSUNG 1024GB.CXA75D0Q
-      </a></li>
+    <div style="width:100px; position:fixed" class="hidden-print">
+      
     </div>
 
-    <div style="width:300px; position:fixed; margin-left:200px">
+    <div style="width:300px; position:fixed; margin-left:100px" class="hidden-print">
+      <h4>Contents: </h4>
   <aside>
-    <div id="toc"><ul><li><a class="toc-href" href="#about-ssdmeter" title="About SSDMeter">About SSDMeter</a></li><li><a class="toc-href" href="#about-driver" title="About Driver">About Driver</a></li><li><a class="toc-href" href="#test-environment" title="Test Environment">Test Environment</a></li></ul></div>
+    <div id="toc"><ul><li><a class="toc-href" href="#about-driver" title="About Driver">About Driver</a></li><li><a class="toc-href" href="#test-environment" title="Test Environment">Test Environment</a></li></ul></div>
   </aside>
+      </br>
+      <h4>Select to compare: </h4>
+  
+<div id="placeHolder"></div>
+<ul id="container">
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li data-vendor = LiteON
+      data-controller = Marvell
+      data-nand = 3D-TLC
+      data-form-factor = 2280>
+      <a href="./pages/ca3-8d256-q11-nvme-liteon-256gb-c48110b/index.html">
+          CA3-8D256-Q11 NVME LITEON 256GB.C48110B
+      </a>
+  </li>
+
+
+
+
+
+
+
+
+
+  
+  <li data-vendor = Toshiba
+      data-controller = Toshiba
+      data-nand = 3D-TLC
+      data-form-factor = 2230>
+      <a href="./pages/kbg30zms256g-nvme-toshiba-256gb-adda0102/index.html">
+          KBG30ZMS256G NVME TOSHIBA 256GB.ADDA0102
+      </a>
+  </li>
+
+
+
+
+
+
+
+
+
+  
+  <li data-vendor = Samsung
+      data-controller = Samsung
+      data-nand = 3D-TLC
+      data-form-factor = 2280>
+      <a href="./pages/sm961-nvme-samsung-1024gb-cxa75d0q/index.html">
+          SM961 NVME SAMSUNG 1024GB.CXA75D0Q
+      </a>
+  </li>
+
+</ul>      
     </div>
     
-    <div class="col-md-7" style="margin-left:500px">
+    <div class="col-md-7" style="margin-left:450px">
     <section id="content" class="body">
         
 
         <div class="row">
             <div class="entry-content">
               <p>Thank you for visiting. Welcome!</p>
-<h1 id="about-ssdmeter">About SSDMeter</h1>
-<p><code>ssdmeter</code></p>
 <h1 id="about-driver">About Driver</h1>
+<p>We use the driver <code>ssdmeter</code>, which is based on SPDK userspace NVMe device driver. </p>
 <h1 id="test-environment">Test Environment</h1>
-<table class="table-striped table table-condensed table-responsive table-hover">
+<table class="table-hover table-striped table-condensed table table-responsive">
 <thead>
 <tr>
 <th>item</th>
@@ -140,7 +199,14 @@
    </div>
 </footer> -->
 
-<script src="./theme/js/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="./theme/js/filtrify.js"></script>
+
+<script type="text/javascript">
+$(function() {
+	$.filtrify("container", "placeHolder");
+});
+</script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="./theme/js/bootstrap.min.js"></script>

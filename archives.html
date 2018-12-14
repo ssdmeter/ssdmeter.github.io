@@ -29,6 +29,8 @@
     <link href="./theme/css/pygments/native.css" rel="stylesheet">
     <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+        
+        <link href="./theme/css/filtrify.css" rel="stylesheet">
 
 
 
@@ -46,22 +48,17 @@
 <div class="container-fluid">
   <div class="row">
     
-    <div style="width:200px; position:fixed">
-      <li><a href="./pages/ca3-8d256-q11-nvme-liteon-256gb-c48110c/index.html">
-          CA3-8D256-Q11 NVME LITEON 256GB.C48110C
-      </a></li>
-      <li><a href="./pages/kbg30zms256g-nvme-toshiba-256gb-adda0102/index.html">
-          KBG30ZMS256G NVME TOSHIBA 256GB.ADDA0102
-      </a></li>
-      <li><a href="./pages/sm961-nvme-samsung-1024gb-cxa75d0q/index.html">
-          SM961 NVME SAMSUNG 1024GB.CXA75D0Q
-      </a></li>
+    <div style="width:100px; position:fixed" class="hidden-print">
+      
     </div>
 
-    <div style="width:300px; position:fixed; margin-left:200px">
+    <div style="width:300px; position:fixed; margin-left:100px" class="hidden-print">
+      <h4>Contents: </h4>
+      </br>
+      <h4>Select to compare: </h4>
     </div>
     
-    <div class="col-md-7" style="margin-left:500px">
+    <div class="col-md-7" style="margin-left:450px">
     <section id="content">
       <h1>Archives for ssdmeter</h1>
         <div id="archives">
@@ -83,7 +80,14 @@
    </div>
 </footer> -->
 
-<script src="./theme/js/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="./theme/js/filtrify.js"></script>
+
+<script type="text/javascript">
+$(function() {
+	$.filtrify("container", "placeHolder");
+});
+</script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="./theme/js/bootstrap.min.js"></script>
