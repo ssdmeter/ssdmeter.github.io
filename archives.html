@@ -27,7 +27,6 @@
     <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="./theme/css/pygments/native.css" rel="stylesheet">
-    <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
         
         <link href="./theme/css/filtrify.css" rel="stylesheet">
@@ -35,30 +34,36 @@
 
 
 
-
 </head>
-<body>
 
+<body>
 
 <!-- Banner -->
 <!-- End Banner -->
 
     
   
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-    
-    <div style="width:100px; position:fixed" class="hidden-print">
+    <div style="width:320px; position:fixed; margin:5px" class="hidden-print">
       
-    </div>
+      <div style="display:block; font-size:16px; height:100px; border-bottom: 1px solid; border-right: 3px solid; text-align: center; vertical-align: middle; line-height: 30px; border-color: #dddddd; color: DeepSkyBlue", class="hidden-print">
+        Powered by <br>
+        <a href="https://github.com/cranechu/pynvme">Pynvme <br>
+          https://github.com/cranechu/pynvme</a>
+      </div>
 
-    <div style="width:300px; position:fixed; margin-left:100px" class="hidden-print">
-      <h4>Contents: </h4>
-      </br>
-      <h4>Select to compare: </h4>
+      <div style="background-color: #dddddd", class="hidden-print">
+        <div style="font-size:20px; font:bold; color: black; line-height: 40px">&nbsp;Contents:</div>
+        </br>
+      </div>
+
+      <div style="display:block; height:100px; border-top: 1px solid; border-right: 3px solid; border-color: #dddddd", class="hidden-print">
+        <div style="font-size:20px; font:bold; color: black; line-height: 40px">&nbsp;Products:</div>
+      </div>
     </div>
     
-    <div class="col-md-7" style="margin-left:450px">
+    <div class="col-md-7" style="margin-left:350px; margin-top:20px;">
     <section id="content">
       <h1>Archives for ssdmeter</h1>
         <div id="archives">
@@ -70,16 +75,19 @@
 </div>
 <!-- End Content Container -->
 
-<!-- <footer>
-   <div class="container-fluid">
+<footer>
+   <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy;  cranechu@gmail.com         </div>
+         <div class="col-xs-10">                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
          <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
       </div>
    </div>
-</footer> -->
-
+</footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="./theme/js/filtrify.js"></script>
 
@@ -96,6 +104,23 @@ $(function() {
 <script src="./theme/js/respond.min.js"></script>
 
 
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-132467013-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- End Google Analytics Code -->
 
 
 </body>

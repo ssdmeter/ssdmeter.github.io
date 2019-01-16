@@ -20,7 +20,6 @@ ul.ft-menu * {
 	line-height: 1;
 	position: relative;
 	text-align: left;
-    font: normal normal 100% sans-serif;
 }
 
 
@@ -62,19 +61,16 @@ ul.ft-menu > li.ft-field > span.ft-label.ft-opened:after {
 
 ul.ft-menu > li.ft-field > div.ft-panel { 
 	position: absolute; 
-	min-width: 200px; 
+	min-width: 160px; 
 	background-clip: padding-box;
-	border: 5px solid #333333;
-	border: 5px solid rgba(0, 0, 0, 0.3);
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	top: 100%;
-	margin-top: 15px;
-	left: 50%;
-	margin-left: -105px;
-	z-index: 9999;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+	margin-top: 5px;
+	left: 5%;
+	margin-left: 5px;
+	z-index: 2147483647;
 }
 ul.ft-menu > li.ft-field > div.ft-panel:before,
 ul.ft-menu > li.ft-field > div.ft-panel:after {
@@ -82,16 +78,9 @@ ul.ft-menu > li.ft-field > div.ft-panel:after {
 	content: " ";
 	height: 0;
 	width: 0;
-	left: 50%;
+	left: 5%;
 }
-ul.ft-menu > li.ft-field > div.ft-panel:before {
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-bottom: 10px solid #333333;
-	border-bottom: 10px solid rgba(0, 0, 0, 0.3);
-	top: -15px;
-	margin-left: -10px;
-}
+
 ul.ft-menu > li.ft-field > div.ft-panel:after {
 	content: " ";
 	height: 0;
@@ -108,7 +97,6 @@ ul.ft-menu > li.ft-field > div.ft-panel > ul.ft-selected {
 	background: #F5F3EE;
 }
 ul.ft-menu > li.ft-field > div.ft-panel > ul.ft-selected > li {
-	font-size: 10px;
 	display: inline-block;
 	*display: inline; 
 	*zoom: 1;
@@ -146,7 +134,7 @@ ul.ft-menu > li.ft-field > div.ft-panel > ul.ft-selected > li:active {
 }
 
 ul.ft-menu > li.ft-field > div.ft-panel > fieldset.ft-search { 
-	padding: 10px;
+	padding: 5px;
 	background: #F5F3EE;
 	background: -webkit-linear-gradient(#F5F3EE, #D0CDC9);
 	background: -moz-linear-gradient(#F5F3EE, #D0CDC9);
@@ -159,8 +147,8 @@ ul.ft-menu > li.ft-field > div.ft-panel > fieldset.ft-search:before {
 	font: normal normal 12px "FiltrifyRegular";
 	content: "s";
 	position: absolute;
-    width: 20px;
-	bottom: 15px;
+  width: 20px;
+	bottom: 10px;
 	left: 18px;
 	color: #BBB;
 	text-shadow: none;
@@ -169,7 +157,7 @@ ul.ft-menu > li.ft-field > div.ft-panel > fieldset.ft-search:before {
 ul.ft-menu > li.ft-field > div.ft-panel > fieldset.ft-search > input { 
 	outline: none;
 	display: block;
-	width: 140px;
+	width: 160px;
 	padding: 4px 10px 4px 25px;
 	color: gray;
 	background: white;

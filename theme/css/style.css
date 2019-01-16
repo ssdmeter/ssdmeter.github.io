@@ -225,7 +225,7 @@ figure.floatcenter, .align-center {
 :target:before {
   content:"";
   display:block;
-  height:50px;
+  height:60px;
   /* fixed header height*/
 
   margin:-50px 0 0;

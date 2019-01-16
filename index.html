@@ -28,7 +28,6 @@
     <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="./theme/css/pygments/native.css" rel="stylesheet">
-    <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
         
         <link href="./theme/css/filtrify.css" rel="stylesheet">
@@ -36,34 +35,29 @@
 
 
 
-
 </head>
-<body>
 
+<body>
 
 <!-- Banner -->
 <!-- End Banner -->
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="min-height:60px;">
+    <div class="container">
         <div class="navbar-header">
-            <a href="./" class="navbar-brand">
-<img class="img-responsive pull-left gap-right" src="./sitelogo.png" width="28"/> ssdmeter            </a>
+            <a href="./" class="navbar-brand" style="color:#111111">
+<img class="img-responsive pull-left gap-right" src="./sitelogo.png" width="28"/> ssdmeter				        <I> find your next ssd</I>
+            </a>
         </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <div class="collapse navbar-collapse navbar-ex1-collapse" style="margin-left:335px">
             <ul class="nav navbar-nav">
 
-                <h3>
-                  <a href="./"> ABOUT US </a>
+                <div style="font-size: 20px; color: black; line-height: 50px;">
+                    Welcome to ssdmeter, a place to test and compare SSD devices.
+                </div>
 
-            
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><span>
-                <form class="navbar-search" action="/search.html">
-                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
-                </form></span>
-              </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -71,23 +65,32 @@
 </div> <!-- /.navbar -->
     
   
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-    
-    <div style="width:100px; position:fixed" class="hidden-print">
+    <div style="width:320px; position:fixed; margin:5px" class="hidden-print">
       
-    </div>
+      <div style="display:block; font-size:16px; height:100px; border-bottom: 1px solid; border-right: 3px solid; text-align: center; vertical-align: middle; line-height: 30px; border-color: #dddddd; color: DeepSkyBlue", class="hidden-print">
+        Powered by <br>
+        <a href="https://github.com/cranechu/pynvme">Pynvme <br>
+          https://github.com/cranechu/pynvme</a>
+      </div>
 
-    <div style="width:300px; position:fixed; margin-left:100px" class="hidden-print">
-      <h4>Contents: </h4>
+      <div style="background-color: #dddddd", class="hidden-print">
+        <div style="font-size:20px; font:bold; color: black; line-height: 40px">&nbsp;Contents:</div>
   <aside>
     <div id="toc"><ul><li><a class="toc-href" href="#about-driver" title="About Driver">About Driver</a></li><li><a class="toc-href" href="#test-environment" title="Test Environment">Test Environment</a></li></ul></div>
   </aside>
-      </br>
-      <h4>Select to compare: </h4>
+        </br>
+      </div>
+
+      <div style="display:block; height:100px; border-top: 1px solid; border-right: 3px solid; border-color: #dddddd", class="hidden-print">
+        <div style="font-size:20px; font:bold; color: black; line-height: 40px">&nbsp;Products:</div>
   
 <div id="placeHolder"></div>
 <ul id="container">
+
+
+
 
 
 
@@ -117,6 +120,9 @@
 
 
 
+
+
+
   
   <li data-vendor = Toshiba
       data-controller = Toshiba
@@ -126,6 +132,30 @@
           KBG30ZMS256G NVME TOSHIBA 256GB.ADDA0102
       </a>
   </li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li data-vendor = Hynix
+      data-controller = Hynix
+      data-nand = 3D-TLC
+      data-form-factor = 2280>
+      <a href="./pages/pc401-nvme-sk-hynix-256gb-80003e00/index.html">
+          PC401 NVME SK HYNIX 256GB.80003E00
+      </a>
+  </li>
+
+
+
 
 
 
@@ -146,9 +176,10 @@
   </li>
 
 </ul>      
+      </div>
     </div>
     
-    <div class="col-md-7" style="margin-left:450px">
+    <div class="col-md-7" style="margin-left:350px; margin-top:20px;">
     <section id="content" class="body">
         
 
@@ -158,7 +189,7 @@
 <h1 id="about-driver">About Driver</h1>
 <p>We use the driver <code>ssdmeter</code>, which is based on SPDK userspace NVMe device driver. </p>
 <h1 id="test-environment">Test Environment</h1>
-<table class="table-hover table-striped table-condensed table table-responsive">
+<table class="table-responsive table table-hover table-striped table-condensed">
 <thead>
 <tr>
 <th>item</th>
@@ -189,16 +220,19 @@
 </div>
 <!-- End Content Container -->
 
-<!-- <footer>
-   <div class="container-fluid">
+<footer>
+   <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy;  cranechu@gmail.com         </div>
+         <div class="col-xs-10">                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
          <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
       </div>
    </div>
-</footer> -->
-
+</footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="./theme/js/filtrify.js"></script>
 
@@ -215,6 +249,23 @@ $(function() {
 <script src="./theme/js/respond.min.js"></script>
 
 
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-132467013-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- End Google Analytics Code -->
 
 
 </body>
