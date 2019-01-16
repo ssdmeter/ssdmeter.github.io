@@ -1,2 +1,0 @@
-# ssdmeter.github.io
-ssdmeter
