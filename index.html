@@ -35,10 +35,19 @@
 
 
 
+
+        <style>
+        
+
+::-webkit-scrollbar {
+display: none;
+}  
+        </style>
+
 </head>
 
 <body>
-
+  
 <!-- Banner -->
 <!-- End Banner -->
 
@@ -67,7 +76,7 @@
   
 <div class="container">
   <div class="row">
-    <div style="width:320px; position:fixed; margin:5px" class="hidden-print">
+    <div style="width:320px; position:fixed; margin:5px; overflow-y: scroll; min-height: 80%" class="hidden-print">
       
       <div style="display:block; font-size:16px; height:100px; border-bottom: 1px solid; border-right: 3px solid; text-align: center; vertical-align: middle; line-height: 30px; border-color: #dddddd; color: DeepSkyBlue", class="hidden-print">
         Powered by <br>
@@ -227,7 +236,7 @@
 <h1 id="test-driver">Test Driver</h1>
 <p>We use the driver <code>pynvme</code>, which is based on SPDK userspace NVMe device driver. </p>
 <h1 id="test-environment">Test Environment</h1>
-<table class="table-responsive table table-hover table-striped table-condensed">
+<table class="table-condensed table-hover table-striped table-responsive table">
 <thead>
 <tr>
 <th>item</th>

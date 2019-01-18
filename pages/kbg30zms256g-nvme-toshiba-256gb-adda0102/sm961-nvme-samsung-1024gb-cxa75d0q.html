@@ -35,10 +35,19 @@
 
 
 
+
+        <style>
+        
+
+::-webkit-scrollbar {
+display: none;
+}  
+        </style>
+
 </head>
 
 <body>
-
+  
 <!-- Banner -->
 <!-- End Banner -->
 
@@ -73,7 +82,7 @@
   
 <div class="container">
   <div class="row">
-    <div style="width:320px; position:fixed; margin:5px" class="hidden-print">
+    <div style="width:320px; position:fixed; margin:5px; overflow-y: scroll; min-height: 80%" class="hidden-print">
       
       <div style="display:block; font-size:16px; height:100px; border-bottom: 1px solid; border-right: 3px solid; text-align: center; vertical-align: middle; line-height: 30px; border-color: #dddddd; color: DeepSkyBlue", class="hidden-print">
         Powered by <br>
@@ -185,7 +194,7 @@
 <h1 id="specification">Specification</h1>
 <h2 id="information">Information</h2>
 <p>Here is some basic information of this SSD in the following table, such as its model name and some identifier.   </p>
-<table class="table-responsive table table-hover table-striped table-condensed">
+<table class="table-condensed table-hover table-striped table-responsive table">
 <thead>
 <tr>
 <th align="left">ITEM</th>
@@ -317,7 +326,7 @@
 </tbody>
 </table>
 <p>NVMe hosts and devices communicate commands and completions data in Submittion and Competion Queues. Queue is the most essential data structure defined by NVMe specification.  </p>
-<table class="table-responsive table table-hover table-striped table-condensed">
+<table class="table-condensed table-hover table-striped table-responsive table">
 <thead>
 <tr>
 <th align="left"></th>
@@ -350,7 +359,7 @@
 </table>
 <h2 id="supported-commands">Supported Commands</h2>
 <p>List basic device information.  </p>
-<table class="table-responsive table table-hover table-striped table-condensed">
+<table class="table-condensed table-hover table-striped table-responsive table">
 <thead>
 <tr>
 <th align="left">ADMIN COMMAND OPCODE</th>
@@ -442,7 +451,7 @@
 </tbody>
 </table>
 <p>List basic device information.  </p>
-<table class="table-responsive table table-hover table-striped table-condensed">
+<table class="table-condensed table-hover table-striped table-responsive table">
 <thead>
 <tr>
 <th align="left">IO COMMAND OPCODE</th>
@@ -485,7 +494,7 @@
 </table>
 <h2 id="thermal">Thermal</h2>
 <p>SSD is becoming faster, and then hotter. Fundementally, hot is bad to the data in NAND media, and so it is necessary to control and  monitor temperature.   </p>
-<table class="table-responsive table table-hover table-striped table-condensed">
+<table class="table-condensed table-hover table-striped table-responsive table">
 <thead>
 <tr>
 <th align="left">ITEM</th>
@@ -538,7 +547,7 @@
 </table>
 <h2 id="health">Health</h2>
 <p>SMART data before tests.  </p>
-<table class="table-responsive table table-hover table-striped table-condensed">
+<table class="table-condensed table-hover table-striped table-responsive table">
 <thead>
 <tr>
 <th align="left">HEALTH ITEM</th>
