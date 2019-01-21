@@ -13,13 +13,13 @@
 <link rel="canonical" href="./">
 
         <meta name="author" content="cranechu@gmail.com" />
-        <meta name="description" content="Welcome! SSDMeter is a website collecting information of SSD products. User can select the product in the side pane to visit its page. By the Contents in the side pane, user can quickly locate the tests in the page. User can select other products for comparison. The name of the …" />
+        <meta name="description" content="Welcome! SSDMeter is a website collecting information of SSD products. User can select and compare different SSD products in the sidebar. The model name and version of products are listed in the top of the page. We will upgrade SSD products information and test results regularly. We focus on NVMe …" />
 
     <meta property="og:site_name" content="ssdmeter" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="ABOUT US"/>
     <meta property="og:url" content="./"/>
-    <meta property="og:description" content="Welcome! SSDMeter is a website collecting information of SSD products. User can select the product in the side pane to visit its page. By the Contents in the side pane, user can quickly locate the tests in the page. User can select other products for comparison. The name of the …" />
+    <meta property="og:description" content="Welcome! SSDMeter is a website collecting information of SSD products. User can select and compare different SSD products in the sidebar. The model name and version of products are listed in the top of the page. We will upgrade SSD products information and test results regularly. We focus on NVMe …" />
 
 
 
@@ -87,7 +87,7 @@ display: none;
       <div style="background-color: #dddddd", class="hidden-print">
         <div style="font-size:20px; font:bold; color: black; line-height: 40px">&nbsp;Contents:</div>
   <aside>
-    <div id="toc"><ul><li><a class="toc-href" href="#welcome" title="Welcome!">Welcome!</a></li><li><a class="toc-href" href="#test-driver" title="Test Driver">Test Driver</a></li><li><a class="toc-href" href="#test-environment" title="Test Environment">Test Environment</a></li><li><a class="toc-href" href="#tests" title="Tests">Tests</a></li><li><a class="toc-href" href="#contact" title="Contact">Contact</a></li></ul></div>
+    <div id="toc"><ul><li><a class="toc-href" href="#welcome" title="Welcome!">Welcome!</a></li><li><a class="toc-href" href="#software" title="Software">Software</a></li><li><a class="toc-href" href="#tests" title="Tests">Tests</a></li></ul></div>
   </aside>
         </br>
       </div>
@@ -231,36 +231,13 @@ display: none;
         <div class="row">
             <div class="entry-content">
               <h1 id="welcome">Welcome!</h1>
-<p>SSDMeter is a website collecting information of SSD products. User can select the product in the side pane to visit its page. By the Contents in the side pane, user can quickly locate the tests in the page. User can select other products for comparison. The name of the compared proudcts are shown in the top of the page, and user can click one the them to return to single product page. 
-[image: layout.png]</p>
-<h1 id="test-driver">Test Driver</h1>
-<p>We use the driver <code>pynvme</code>, which is based on SPDK userspace NVMe device driver. </p>
-<h1 id="test-environment">Test Environment</h1>
-<table class="table-condensed table-hover table-striped table-responsive table">
-<thead>
-<tr>
-<th>item</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="col-md-1">hardware platform</td>
-<td class="col-md-1">DELL</td>
-</tr>
-<tr>
-<td class="col-md-1">CPU</td>
-<td class="col-md-1">Intel ...</td>
-</tr>
-<tr>
-<td class="col-md-1">DRAM</td>
-<td class="col-md-1">18GB</td>
-</tr>
-</tbody>
-</table>
+<p>SSDMeter is a website collecting information of SSD products. User can select and compare different SSD products in the sidebar. The model name and version of products are listed in the top of the page. We will upgrade SSD products information and test results regularly.  </p>
+<p>We focus on NVMe SSD products in different form factors, like M.2, AIC, Thunderbolt, and even NVMe over fabrics. We do not gather SATA SSD products. </p>
+<h1 id="software">Software</h1>
+<p>In order to get the best control and information on NVMe SSD, we use the driver <a href="https://github.com/cranechu/pynvme"><code>pynvme</code></a>. It is based on SPDK, so we can get the raw performance of SSD devices, without overhead or cache/buffer in any OS storage stacks. It is a python extension of SPDK, so we can develop test scripts in Python and make use of existed test frameworks and utilities. With Pynvme, we can send and verify different NVMe commands, even those illegel commands. Furthermore, Pynvme verifies data with CRC32, because data integrity is the most important thing for any storage device.  </p>
+<p>All tests are conducted on the same computer. </p>
 <h1 id="tests">Tests</h1>
-<h1 id="contact">Contact</h1>
-<p>cranechu@gmail.com</p>
+<p>We develop test scripts to collect basic information, NVMe conformance, performance with different workloads, and SSD device reliability. Tests have been developing and conduecting reguarly, and the websites are updated accordingly. </p>
             </div>
         </div>
     </section>
